@@ -70,13 +70,13 @@ Resources:
     Type: 'AWS::GuardDuty::Member'
     Properties:
       DetectorId: !Ref GDDetector
-      Email: platform@sagebase.org
+      Email: aws.logcentral@sagebase.org
       MemberId: !Ref LogcentralAwsAccountId
       Status: Invited
   GDScicompMember:
     Type: 'AWS::GuardDuty::Member'
     Properties:
       DetectorId: !Ref GDDetector
-      Email: platform@sagebase.org
+      Email: aws.scicomp@sagebase.org
       MemberId: !Ref ScicompAwsAccountId
       Status: Invited
