@@ -1,7 +1,7 @@
-template_path: templates/guardduty-master.yaml
+template_path: guardduty-master.yaml
 stack_name: guardduty-master
 dependencies:
-  - essentials
+  - prod/essentials.yaml
 parameters:
   BridgeProdAwsAccountId: !ssm /infra/BridgeProdAwsAccountId
   SynapseProdAwsAccountId: !ssm /infra/SynapseProdAwsAccountId
