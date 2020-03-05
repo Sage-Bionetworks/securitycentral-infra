@@ -7,4 +7,5 @@ parameters:
   SynapseProdAwsAccountId: !ssm /infra/SynapseProdAwsAccountId
   LogcentralAwsAccountId: !ssm /infra/LogcentralAwsAccountId
   ScicompAwsAccountId: !ssm /infra/ScicompAwsAccountId
+  ScipoolProdAwsAccountId: "237179673806"
   OperatorEmail: aws.securitycentral@sagebase.org
