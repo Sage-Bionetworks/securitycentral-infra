@@ -9,13 +9,13 @@ helps application teams correlate and analyze log data across multiple applicati
 
 
 ## Guard Duty
-Guard duty findings from selected Sage accounts are sent to Guard duty on Logcentral.
+Guard duty findings from selected Sage accounts are sent to AWS Guardduty in securitycentral.
 
 ## Instructions to create or update CF stacks
 
 ```
 # Update CF stacks with sceptre:
-# sceptre launch-stack prod <stack_name>
+# sceptre launch prod <stack_name>
 ```
 
 The above should setup resources for the AWS account.  Once the infrastructure
@@ -27,7 +27,7 @@ for the account has been setup you can access and view the account using the
 ## Setup Guard Duty Aggregation
 Steps to guard duty aggregation from source account to Logcentral
  1. Create a PR to add a member account resource, similar to
-    [GDSynapseProdMember resource](https://github.com/Sage-Bionetworks/logcentral-infra/templates/GuardDutyMaster.yaml)
+    [GDSynapseProdMember resource](https://github.com/Sage-Bionetworks/securitycentral-infra/blob/master/templates/guardduty-master.yaml)
  2. Create a PR to add a new [sceptre stack config](https://github.com/Sage-Bionetworks/synapseprod-infra/pull/9)
     to setup a guard duty member on the source account.
 
