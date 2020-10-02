@@ -8,4 +8,5 @@ parameters:
   LogcentralAwsAccountId: !ssm /infra/LogcentralAwsAccountId
   ScicompAwsAccountId: !ssm /infra/ScicompAwsAccountId
   ScipoolProdAwsAccountId: "237179673806"
+  StridesAwsAccountId: "423819316185"
   OperatorEmail: aws.securitycentral@sagebase.org
