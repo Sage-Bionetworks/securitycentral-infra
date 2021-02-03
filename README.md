@@ -1,3 +1,5 @@
+# This repo has been moved to https://github.com/Sage-Bionetworks-IT/organizations-infra/tree/master/sceptre/securitycentral
+
 # Overview
 Install, configure and manage the
 [AWS Sage central security account](https://sagebionetworks.jira.com/wiki/spaces/IT/pages/577044503/Sage+AWS+Logging).
